@@ -41,6 +41,20 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="search" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="portfolio"
+        options={{
+          title: "Portfolio",
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="area-chart" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="discussion"
+        options={{
+          title: "Discussion",
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="comment" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }
@@ -69,4 +83,4 @@ const styles = StyleSheet.create({
     borderRadius: 20, // Fully circular
     marginRight: 10, // Space between the avatar and the right edge
   },
-});
+});1
